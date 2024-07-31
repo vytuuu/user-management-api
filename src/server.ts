@@ -4,6 +4,7 @@ import express, { Response, Request } from "express";
 import rateLimit from "express-rate-limit";
 import { mongoConnect } from "./database/index";
 import { corsOptions } from "./middlewares/cors/options";
+import routes from "./routes/index";
 dotenv.config();
 mongoConnect();
 
@@ -18,6 +19,7 @@ app.use(
 );
 
 app.use(express.json());
+app.use("/api", routes);
 
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
