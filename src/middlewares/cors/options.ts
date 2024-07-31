@@ -11,11 +11,9 @@ export const corsOptions: CorsOptionsDelegate = (
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
-      callback(new Error("Forbidden - Access not permitted by: cors"));
+      callback("Forbidden - Access not permitted by: cors");
     }
   } catch (err) {
-    callback(
-      new Error("Failed to parse allowed origins from environment variables")
-    );
+    callback("Failed to parse allowed origins from environment variables");
   }
 };
