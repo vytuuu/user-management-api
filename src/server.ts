@@ -1,5 +1,4 @@
 import * as dotenv from "dotenv";
-import routers from "./routes/router";
 import cors from "cors";
 import express, { Response, Request } from "express";
 import rateLimit from "express-rate-limit";
@@ -26,7 +25,6 @@ const apiLimiter = rateLimit({
   message: "Too many requests from this IP, please try again later.",
 });
 app.use(apiLimiter);
-app.use("/", routers);
 
 app.use((req: Request, res: Response) => {
   res.status(404).json({ error: "Route not found" });
