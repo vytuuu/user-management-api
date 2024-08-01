@@ -23,37 +23,37 @@ Para começar a usar esta API, siga os passos abaixo:
 
 1. Clone o repositório:
 
-    ```bash
-    git clone https://github.com/vytuuu/user-management-api.git
-    cd user-management-api
-    ```
+   ```bash
+   git clone https://github.com/vytuuu/user-management-api.git
+   cd user-management-api
+   ```
 
-2. Instale as dependências:
+2. Crie um arquivo `.env` no diretório raiz e adicione suas variáveis de ambiente:
 
-    ```bash
-    npm install
-    ```
+   ```env
+   ATLAS_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   ALLOWED_URLS=[""]
+   PORT=3333
+   ```
 
-3. Crie um arquivo `.env` no diretório raiz e adicione suas variáveis de ambiente:
+3. Instale as dependências:
 
-    ```env
-    ATLAS_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret
-    ALLOWED_URLS=[""]
-    PORT=3333
-    ```
+   ```bash
+   npm install
+   ```
 
-4. Construa o aplicativo:
+4. Inicie o servidor:
 
-    ```bash
-    npm run build
-    ```
+   ```bash
+   npm run dev
+   ```
 
-5. Inicie o servidor:
+5. Construa o aplicativo:
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run build
+   ```
 
 6. Acesse a documentação da API:
    Abra seu navegador e vá para [http://localhost:3333/api-docs](http://localhost:3333/api-docs) para visualizar a documentação do Swagger.

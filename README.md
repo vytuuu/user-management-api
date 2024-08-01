@@ -28,13 +28,7 @@ Follow the steps below to get started with this API:
    cd user-management-api
    ```
 
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Create a `.env` file in the root directory and add your environment variables:
+2. Create a `.env` file in the root directory and add your environment variables:
 
    ```env
    ATLAS_URI=your_mongodb_connection_string
@@ -43,16 +37,22 @@ Follow the steps below to get started with this API:
    PORT=3333
    ```
 
-4. Build the application:
+3. Install dependencies:
 
    ```bash
-   npm run build
+   npm install
    ```
 
-5. Start the server:
+4. Start the server:
 
    ```bash
    npm run dev
+   ```
+
+5. Build the application:
+
+   ```bash
+   npm run build
    ```
 
 6. Access the API documentation:
