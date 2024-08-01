@@ -5,10 +5,12 @@ import rateLimit from "express-rate-limit";
 import { mongoConnect } from "./database/index";
 import { corsOptions } from "./middlewares/cors/options";
 import routes from "./routes/index";
+import { setupSwagger } from "./swagger";
 dotenv.config();
 mongoConnect();
 
 const app = express();
+setupSwagger(app);
 
 app.use(
   cors({
