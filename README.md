@@ -43,7 +43,7 @@ Follow the steps below to get started with this API:
    npm install
    ```
 
-4. Start the server:
+4. Start server in development environment:
 
    ```bash
    npm run dev
@@ -55,7 +55,13 @@ Follow the steps below to get started with this API:
    npm run build
    ```
 
-6. Access the API documentation:
+6. Start server in production environment:
+
+   ```bash
+   npm run start
+   ```
+
+7. Access the API documentation:
    Open your browser and navigate to [http://localhost:3333/api-docs](http://localhost:3333/api-docs) to view the Swagger documentation.
 
 ## 📚 API Documentation

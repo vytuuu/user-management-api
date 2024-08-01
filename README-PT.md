@@ -43,16 +43,22 @@ Para começar a usar esta API, siga os passos abaixo:
    npm install
    ```
 
-4. Inicie o servidor:
+4. Iniciar o servidor no ambiente de desenvolvimento:
 
    ```bash
    npm run dev
    ```
 
-5. Construa o aplicativo:
+5. Buildar aplicação:
 
    ```bash
    npm run build
+   ```
+
+6. Iniciar o servidor no ambiente de produção:
+
+   ```bash
+   npm run start
    ```
 
 6. Acesse a documentação da API:
